@@ -18,12 +18,11 @@ export async function GET(req: Request) {
 
     console.log(`[CHAT-HISTORY] Direct fetch for chatId: ${chatId}`)
 
-    // ✅ DIRECTLY fetch messages (Bypassing strict session table check)
-    // Using whatever ID provided in search param as the session filter
+    // Fetch messages
     const { data: messages, error } = await supabase
       .from('messages')
       .select('*')
-      .eq('session_id', chatId) // Mapping chatId to the session_id column in messages
+      .eq('session_id', chatId)
       .order('created_at', { ascending: true })
 
     if (error) {
@@ -31,9 +30,9 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       success: true,
-      messages: data || [] 
+      messages: messages || []
     })
 
   } catch (err: any) {
