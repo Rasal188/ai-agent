@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "AI Customer Support Agent",
+  title: "Nicho AI",
   description: "RAG-based support agent using Supabase and vector search.",
 };
 

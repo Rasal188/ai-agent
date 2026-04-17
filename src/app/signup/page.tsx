@@ -88,7 +88,7 @@ function SignupContent() {
                 />
               </motion.div>
               <h1 className="text-3xl md:text-4xl font-[800] tracking-[-0.05em] uppercase text-foreground mb-4 font-heading">
-                CREATE YOUR MELOVA ACCOUNT
+                CREATE YOUR NICHO ACCOUNT
               </h1>
               <p className="text-[10px] font-black uppercase tracking-[0.4em] text-foreground/30 px-6 leading-loose">
                 Join and start interacting with your AI agent.

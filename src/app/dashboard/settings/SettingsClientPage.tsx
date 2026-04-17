@@ -131,7 +131,7 @@ export default function SettingsClientPage({
               <div className="h-1 w-full bg-[var(--color-primary)]/10 rounded-full overflow-hidden">
                 <div className="h-full w-2/3 bg-[var(--color-primary)] rounded-full"></div>
               </div>
-              <p className="text-[9px] font-medium opacity-50 mt-3 italic">Melova AI Platform © 2026</p>
+              <p className="text-[9px] font-medium opacity-50 mt-3 italic">Nicho AI Platform © 2026</p>
             </div>
           </aside>
         </div>

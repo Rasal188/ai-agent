@@ -35,8 +35,8 @@ export function Sidebar({ userEmail }: { userEmail: string }) {
           className="font-bold text-lg flex items-center gap-2 hover-blur transition-all"
           onClick={() => setIsMobileOpen(false)}
         >
-          <div className="w-8 h-8 rounded-xl bg-[var(--color-primary)] flex items-center justify-center text-white font-bold shadow-md">AI</div>
-          Agent
+          <div className="px-2 h-8 rounded-xl bg-[var(--color-primary)] flex items-center justify-center text-white font-bold shadow-md text-xs">NICHO</div>
+          AI
         </Link>
         <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="p-2 btn-hover-effect">
           {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -56,11 +56,11 @@ export function Sidebar({ userEmail }: { userEmail: string }) {
           <Link href="/" className="font-bold text-xl flex items-center gap-3 transition-all link-hover-effect group">
             <motion.div 
               whileHover={{ rotate: 5, scale: 1.1 }}
-              className="w-10 h-10 rounded-2xl bg-[var(--color-primary)] shadow-lg flex items-center justify-center text-white font-bold group-hover:shadow-[var(--color-primary)]/40"
+              className="px-3 h-10 rounded-2xl bg-[var(--color-primary)] shadow-lg flex items-center justify-center text-white font-bold group-hover:shadow-[var(--color-primary)]/40 text-xs"
             >
-              AI
+              NICHO
             </motion.div>
-            <span className="bg-gradient-to-r from-gray-800 to-gray-500 bg-clip-text text-transparent dark:from-white dark:to-gray-300">Support</span>
+            <span className="bg-gradient-to-r from-gray-800 to-gray-500 bg-clip-text text-transparent dark:from-white dark:to-gray-300">AI</span>
           </Link>
         </div>
 

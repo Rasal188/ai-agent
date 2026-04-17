@@ -23,11 +23,11 @@ export default function LandingPage() {
             <motion.div 
               whileHover={{ rotate: 10, scale: 1.1, borderRadius: "50%" }}
               transition={{ type: 'spring', bounce: 0.5 }}
-              className="w-10 h-10 rounded-[1rem] bg-[var(--color-primary)] text-white flex items-center justify-center font-black text-xs shadow-xl ring-2 ring-white/20 font-heading"
+              className="px-3 h-10 rounded-[1rem] bg-[var(--color-primary)] text-white flex items-center justify-center font-black text-xs shadow-xl ring-2 ring-white/20 font-heading"
             >
-              AI
+              NICHO
             </motion.div>
-            <span className="font-heading font-black text-xl tracking-[-0.07em] uppercase text-foreground">Support</span>
+            <span className="font-heading font-black text-xl tracking-[-0.07em] uppercase text-foreground">AI</span>
           </Link>
           
           <DynamicNavbar />
@@ -50,8 +50,8 @@ export default function LandingPage() {
             </motion.div>
             
             <div className="space-y-6">
-              <h1 className="text-[8rem] md:text-[10.5rem] font-[800] tracking-widest text-foreground uppercase drop-shadow-2xl font-sans melova-shine relative">
-                MELOVA
+              <h1 className="text-[8rem] md:text-[10.5rem] font-[800] tracking-widest text-foreground uppercase drop-shadow-2xl font-sans brand-shine relative">
+                NICHO
               </h1>
               
               <div className="gradient-fade-line max-w-lg mx-auto" />

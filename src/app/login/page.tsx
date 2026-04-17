@@ -56,7 +56,7 @@ function LoginContent() {
                 />
               </motion.div>
               <h1 className="text-3xl md:text-4xl font-[800] tracking-[-0.05em] uppercase text-foreground mb-4 font-heading">
-                {isLogin ? 'WELCOME TO MELOVA' : 'CREATE ACCOUNT'}
+                {isLogin ? 'WELCOME TO NICHO' : 'CREATE ACCOUNT'}
               </h1>
             </div>
 
