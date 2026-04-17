@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, Suspense } from 'react'
-import { login, signup, signInWithGoogle } from './actions'
+import { login, signup } from './actions'
 import { useSearchParams } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Fingerprint, LogIn, UserPlus, Lock, KeyRound, ShieldCheck, Loader2, Mail, Eye, EyeOff, User } from 'lucide-react'
@@ -192,7 +192,16 @@ function LoginContent() {
             <motion.button
               whileHover={{ y: -2, scale: 1.01, backgroundColor: 'rgba(0,0,0,0.02)' }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => signInWithGoogle()}
+              onClick={async () => {
+                const { createClient } = await import('@/utils/supabase/client')
+                const supabase = createClient()
+                await supabase.auth.signInWithOAuth({
+                  provider: 'google',
+                  options: {
+                    redirectTo: `${window.location.origin}/auth/callback`,
+                  },
+                })
+              }}
               className="flex w-full items-center justify-center gap-4 rounded-2xl border border-border/60 bg-transparent py-4 text-[10px] font-black uppercase tracking-[0.3em] text-foreground transition-all shadow-sm"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24">
