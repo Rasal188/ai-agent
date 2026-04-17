@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #A7C7E7;
-  --color-pastel-red: #FFB3BA;
-  --color-pastel-yellow: #FFF5BA;
-  --color-pastel-green: #BAFFC9;
+  --color-primary: #8d6e63;
+  --color-pastel-red: #d7ccc8;
+  --color-pastel-yellow: #f5f2eb;
+  --color-pastel-green: #e7e0d3;
   
-  --color-primary-dark: #8fb1d1;
-  --color-pastel-red-dark: #eb9ca4;
-  --color-pastel-yellow-dark: #ebd08d;
-  --color-pastel-green-dark: #9ed4ab;
+  --color-primary-dark: #5d4037;
+  --color-pastel-red-dark: #bcaaa4;
+  --color-pastel-yellow-dark: #d7ccc8;
+  --color-pastel-green-dark: #a1887f;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -18,24 +18,23 @@
   --color-border: var(--border);
 
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-poppins);
-  --font-bubbly: var(--font-fredoka);
+  --font-heading: var(--font-outfit);
 }
 
 :root {
   --background: transparent;
-  --foreground: #0f172a;
-  --card: #ffffff;
-  --card-foreground: #0f172a;
-  --border: #e2e8f0;
+  --foreground: #3e2723;
+  --card: #fffdfa;
+  --card-foreground: #3e2723;
+  --border: #d7ccc8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #f8fafc;
-    --card: #1e293b;
-    --card-foreground: #f8fafc;
-    --border: #334155;
+    --foreground: #efece5;
+    --card: #2d2422;
+    --card-foreground: #efece5;
+    --border: #4e342e;
   }
 }
 
@@ -58,12 +57,12 @@ body {
 
 /* Base Body Background Color */
 body {
-  background-color: #ffffff !important;
+  background-color: #faf9f6 !important;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #0f172a !important;
+    background-color: #1a1514 !important;
   }
 }
 
@@ -74,11 +73,11 @@ body {
   z-index: -100;
   background: linear-gradient(
     -45deg, 
-    #ffffff, 
-    #fce7f3, 
-    #e9d5ff, 
-    #dbeafe,
-    #ffffff
+    #faf9f6, 
+    #f5f2eb, 
+    #efece5, 
+    #e7e0d3,
+    #faf9f6
   );
   background-size: 400% 400%;
   animation: gradientFlow 18s ease-in-out infinite;
@@ -94,11 +93,11 @@ body {
   .animated-bg {
     background: linear-gradient(
       -45deg, 
-      #0f172a, 
-      #1e1b4b, 
-      #312e81, 
-      #1e3a8a,
-      #0f172a
+      #1a1514, 
+      #2d2422, 
+      #3e2723, 
+      #4e342e,
+      #1a1514
     );
     background-size: 400% 400%;
   }
@@ -117,7 +116,7 @@ body {
 .blob-1 {
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, #fce7f3 0%, #e9d5ff 100%);
+  background: radial-gradient(circle, #f5f2eb 0%, #e7e0d3 100%);
   top: -10%;
   right: -5%;
   animation: float-blob-1 22s infinite alternate ease-in-out;
@@ -126,7 +125,7 @@ body {
 .blob-2 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, #dbeafe 0%, #fce7f3 100%);
+  background: radial-gradient(circle, #e7e0d3 0%, #f5f2eb 100%);
   bottom: -15%;
   left: -10%;
   animation: float-blob-2 28s infinite alternate ease-in-out;
@@ -230,4 +229,4 @@ body {
   box-shadow: 0 15px 40px -10px rgba(var(--color-primary-rgb), 0.3);
 }
 
-.font-bubbly { font-family: var(--font-bubbly), sans-serif; }
+.font-outfit { font-family: var(--font-outfit), sans-serif; }

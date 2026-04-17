@@ -106,7 +106,7 @@ function MinimalCursor() {
         animate={{
           scale: isPointer ? 1.5 : 1,
         }}
-        className="fixed w-2 h-2 bg-[var(--color-primary)] rounded-full shadow-[0_0_15px_rgba(167,199,231,0.8)] z-[10000]"
+        className="fixed w-2 h-2 bg-[var(--color-primary)] rounded-full shadow-[0_0_15px_rgba(141,110,99,0.8)] z-[10000]"
       />
       
       {/* Flowing Ring - Trailing Edge */}

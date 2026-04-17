@@ -44,13 +44,13 @@ export default function LandingPage() {
               className="inline-flex items-center gap-4 px-8 py-3 rounded-full border border-foreground/[0.08] bg-white/50 shadow-2xl backdrop-blur-3xl text-[9px] font-black uppercase tracking-[0.5em] mb-4 text-foreground/60 border-l-4 border-l-[var(--color-primary)] mx-auto relative group overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-              <Activity size={14} className="text-pink-400 animate-pulse" />
+              <Activity size={14} className="text-amber-600 animate-pulse" />
               <span>Fluid Neural Engine v2.0.4</span>
               <Sparkles size={12} className="text-[var(--color-primary)]" />
             </motion.div>
             
             <div className="space-y-6">
-              <h1 className="text-[8rem] md:text-[10.5rem] font-[800] tracking-widest text-foreground uppercase drop-shadow-2xl font-bubbly melova-shine relative">
+              <h1 className="text-[8rem] md:text-[10.5rem] font-[800] tracking-widest text-foreground uppercase drop-shadow-2xl font-sans melova-shine relative">
                 MELOVA
               </h1>
               
@@ -60,7 +60,7 @@ export default function LandingPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
-                className="text-xl md:text-2xl font-[400] tracking-[0.2em] text-foreground/40 font-bubbly lg:px-20 leading-relaxed uppercase"
+                className="text-xl md:text-2xl font-[400] tracking-[0.2em] text-foreground/40 font-heading lg:px-20 leading-relaxed uppercase"
               >
                 i am here to answer you
               </motion.p>

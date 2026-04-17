@@ -141,7 +141,7 @@ export default function ProfilePage() {
                 </div>
                 
                 <div className="relative z-10 space-y-8">
-                  <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-[var(--color-primary)] via-purple-500 to-pink-500 flex items-center justify-center text-white shadow-xl">
+                  <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-[var(--color-primary)] via-[#a1887f] to-[var(--color-primary-dark)] flex items-center justify-center text-white shadow-xl">
                     <UserCircle size={40} />
                   </div>
                   <div className="space-y-1">
